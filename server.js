@@ -1,6 +1,7 @@
-const PORT = process.env.PORT
+const PORT = 8000
 const express = require('express')
 const path = require('path')
+const loginRoute = require('./routes/signin')
 
 const app = express();
 app.set('view engine', 'ejs');
@@ -11,6 +12,10 @@ app.use(express.static(staticPath))
 
 app.get('/', (req, res) => {
     res.render('index')
+})
+
+app.use('/login', loginRoute, (req, res) => {
+    res.render('login')
 })
 
 app.listen(PORT, (req, res) => {
