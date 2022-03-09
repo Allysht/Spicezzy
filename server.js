@@ -1,4 +1,4 @@
-const PORT = 8000
+const PORT = env.process.PORT
 const express = require('express')
 const path = require('path')
 const loginRoute = require('./routes/signin')
