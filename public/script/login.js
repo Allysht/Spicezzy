@@ -1,3 +1,7 @@
-if (window.location.href === 'http://localhost:8000/login') {
-    window.location.href = 'http://localhost:8000/login/admin'
+import { domain } from '/domain/setup.js'
+
+if (window.location.href === `${domain}/login`) {
+     window.location.href = `${domain}/login/admin`
 }
+
+console.log(domain)
