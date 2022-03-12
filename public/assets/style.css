@@ -61,3 +61,64 @@ p {
         font-size: 5vw;
     }
 }
+
+#logo {
+    font-size: 1.2rem;
+}
+
+#logo2 {
+    border-left: 2px solid #fff;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.head-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-cont input {
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #56359C;
+    color: #56359C;
+    padding-left: 5px;
+}
+
+.input-cont input::placeholder {
+    color: #56359C;
+}
+
+.sign-in-container {
+    border: 1px solid #56359C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-cont {
+    padding: 10px;
+}
+
+.btn-cont button {
+    width: 80px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #56359C;
+    color: #56359C;
+    cursor: pointer;
+}
